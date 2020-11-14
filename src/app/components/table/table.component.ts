@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { data } from 'src/app/utils/data';
 import * as XLSX from 'xlsx';
 
@@ -9,8 +9,6 @@ import * as XLSX from 'xlsx';
 })
 export class TableComponent implements OnInit {
   dataSet: any[];
-
-  @ViewChild('nz-table') nzTable: ElementRef;
 
   ngOnInit(): void {
     this.dataSet = data;
